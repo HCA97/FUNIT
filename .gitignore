@@ -4,3 +4,6 @@
 *.zip
 *.pkl
 *.pyc
+logs
+outputs
+cache

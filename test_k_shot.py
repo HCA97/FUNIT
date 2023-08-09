@@ -20,19 +20,19 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--config',
                     type=str,
-                    default='configs/funit_animals.yaml')
+                    default='configs/funit_mosquitos.yaml')
 parser.add_argument('--ckpt',
                     type=str,
-                    default='pretrained/animal119_gen_00200000.pt')
+                    default='./outputs/funit_mosquitos/checkpoints/gen_00035000.pt')
 parser.add_argument('--class_image_folder',
                     type=str,
-                    default='images/n02138411')
+                    default='images_mosquitos/aegypti')
 parser.add_argument('--input',
                     type=str,
-                    default='images/input_content.jpg')
+                    default='images_mosquitos/input_content2.jpeg')
 parser.add_argument('--output',
                     type=str,
-                    default='images/output.jpg')
+                    default='images_mosquitos/output2.jpeg')
 opts = parser.parse_args()
 cudnn.benchmark = True
 opts.vis = True
